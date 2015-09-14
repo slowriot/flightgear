@@ -449,7 +449,7 @@ Surface* Wing::newSurface(float* pos, float* orient, float chord,
         s->setStallWidth(1, _stallWidth * 0.5f);
     } else {
         s->setStall(1, stallAoA);
-        s->setStall(1, _stallWidth);
+        s->setStallWidth(1, _stallWidth);
     }
 
     // The "reverse" stalls are unmeasurable junk.  Just use 13deg and
